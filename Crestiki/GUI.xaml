@@ -1,0 +1,35 @@
+﻿<Window x:Class="Crestiki.GUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crestiki"
+        mc:Ignorable="d"
+        Title="GUI" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Name="b1" Grid.Row="0" Grid.Column="0" FontFamily="Arial Black" FontSize="72" Click="button_Click" Height="Auto" Margin="0,10,0.4,0" ></Button>
+        <Button Name="b2" Grid.Row="0" FontFamily="Arial Black" FontSize="72" Click="button_Click" Grid.ColumnSpan="3" Height="Auto" Margin="198,10,198.2,0"/>
+        <Button Name="b3" Grid.Row="0" Grid.Column="2" FontFamily="Arial Black" FontSize="72" Click="button_Click" Height="Auto" Margin="0.2,10,0.2,0"></Button>
+        <Button Name="b4" Grid.Row="1" Grid.Column="0" FontFamily="Arial Black" FontSize="72" Click="button_Click" Height="Auto" Margin="0,0,0.4,0"></Button>
+        <Button Name="b5" Grid.Row="1" FontFamily="Arial Black" FontSize="72" Click="button_Click" Grid.ColumnSpan="3" Height="Auto" Margin="198,0,198.2,0"/>
+        <Button Name="b6" Grid.Row="1" Grid.Column="2" FontFamily="Arial Black" FontSize="72" Click="button_Click" Height="Auto" Margin="0.2,0"></Button>
+        <Button Name="b7" Grid.Row="2" Grid.Column="0" FontFamily="Arial Black" FontSize="72" Click="button_Click" Height="Auto" Margin="0,0,0.4,0"></Button>
+        <Button Name="b8" Grid.Row="2" FontFamily="Arial Black" FontSize="72" Click="button_Click" Grid.ColumnSpan="3" Height="Auto" Margin="198,0,198.2,0"/>
+        <Button Name="b9" Grid.Row="2" Grid.Column="2" FontFamily="Arial Black" FontSize="72" Click="button_Click" Height="140" Margin="0.2,0" VerticalAlignment="Bottom"></Button>
+        <Button Name ="restart" Content="Сброс" Grid.Column="2" FontSize="40" Click="restart_Click" Margin="198.2,0,-0.4,0" Grid.Row="1" Height="Auto" Grid.ColumnSpan="2">
+            
+        </Button>
+        <Button Name ="Exit" Content="Начать игру" Grid.Column="2" FontSize="40" Click="Exit_Click" Margin="198.2,10,-0.4,0" Height="Auto" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
